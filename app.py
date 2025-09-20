@@ -16,6 +16,6 @@ feature5 = st.number_input("Enter Sample Question Papers Practiced : ")
 
 # Predict button
 if st.button("Predict"):
-    data = pd.DataFrame([[feature1, feature2 , feature3,feature4,feature5]], columns=['Feature1', 'Feature2' , 'Feature3' , 'Feature4','Feature5'])
+    data = np.array([[feature1, feature2 , feature3,feature4,feature5]])
     prediction = model.predict(data)
     st.success(f"Predicted Value: {prediction[0]}")
