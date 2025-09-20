@@ -5,7 +5,7 @@ import numpy as np
 # Load model
 model = joblib.load('model.pkl')
 
-st.title("Multiple Linear Regression Predictor")
+st.title("Score Predictor")
 
 # Input features
 feature1 = st.number_input("Enter Hours Studied:")
