@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
-
+import numpy as np
 # Load model
 model = joblib.load('model.pkl')
 
